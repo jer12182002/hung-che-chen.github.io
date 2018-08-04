@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link href="styles.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="main.js"></script>
+
+
+
+<head>
+    <title>Hung-Che, Chen</title>
+</head>
+
+<body>
+    <div id="load">
+        <div id="firstHalf">
+            <h1>Hung-Che</h1>
+            <h1>Chen</h1>
+        </div>
+        <div id="secondHalf">
+            <p>Java Developer</br>Full-Stack Developer</br>Front-End Developer</p>
+        </div>
+        <div id="arrow" onclick="scrollToTop()">
+            <h2 id="top">TOP</h2>
+        </div>
+        <canvas id="rect_1"></canvas>
+        <canvas id="rect_2"></canvas>
+        <canvas id="rect_3"></canvas>
+        
+    </div>
+
+    <div id="intro">
+        <h1>About me</h1>
+        <img src="pictures/selfie.jpg">
+        <div id="introDesc">
+            <p>Hi! I am Hung-Che, Chen. Or call me Jason. I graduated from Computer Programmer Progrom at Seneca College.
+                <br> I am an easy-going and motivated persone.
+                <br> So I always play well in the teams. I have years of experience in coding.
+                <br> I love coding, and I love cooking as well.
+                <br> Coding is like a steak, and cooking is the condiments to make it more flavorful and creative.
+            </p>
+        </div>
+    </div>
+
+    <div id="exp">
+        <h1>Work Experience</h1>
+        <p id="jobTitle">Programmer Analyst
+            <br>
+        </p>
+        <p id="jobInfo">Rail Cars &amp; Shops-Toronto Transit Commission,
+            <br>TTC Hillcrest Complex, 1138 bathurst street, Toronto, ON, M6G 2B4 </p>
+        <img id="train" src="pictures/train.png">
+        <img id="stop" src="pictures/stop.gif">
+
+    </div>
+    <div id="skills">
+        <h1 class="circle_fadeIn">Skills</h1>
+        <div id="javaGroup" class="circle_fadeIn">
+            <canvas id="java_canvas" width="200" height="200"></canvas>
+            <p id="java" class="circle_fadeIn">JAVA</p>
+        </div>
+
+        <div id="andriodGroup" class="circle_fadeIn">
+            <canvas id="andr_canvas" width="200" height="200"></canvas>
+            <p id="andr" class="circle_fadeIn">ANDROID</p>
+        </div>
+
+        <div id="cGroup" class="circle_fadeIn">
+            <canvas id="c_canvas" width="200" height="200"></canvas>
+            <p id="c" class="circle_fadeIn">C/C++</p>
+        </div>
+
+        <div id="webGroup" class="circle_fadeIn">
+            <canvas id="web_canvas" width="200" height="200"></canvas>
+            <p id="web" class="circle_fadeIn">HTML/CSS/</br>JAVASCRIPT</p>
+        </div>
+
+        <div id="sqlGroup" class="circle_fadeIn">
+            <canvas id="sql_canvas" width="200" height="200"></canvas>
+            <p id="sql" class="circle_fadeIn">SQL</p>
+
+        </div>
+       
+    </div>
+
+    <div id="contact">
+        <h1>Contact</h1>
+        <p>
+            <img id="pin" src="pictures/pin.png"> North York, Canada</p>
+        <p id="emailP">
+            <img id="email" src="pictures/email.png">
+            <a id="emailA" href="mailto:jer12182002@gmail.com">jer12182002@gmail.com</a>
+        </p>
+        <a href="https://www.linkedin.com/in/hung-che-chen-bb259b88">
+            <img id="linkedIn" src="pictures/linkedin-logo.png">
+        </a>
+        <a href="https://github.com/jer12182002">
+            <img id="github" src="pictures/github.png">
+        </a>
+
+
+        <div id="map">
+            <script>
+                var map;
+                var myLocation = { lat: 43.784509, lng: -79.349089 }
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: myLocation,
+                        zoom: 15
+                    });
+                    var marker = new google.maps.Marker({
+                        position: myLocation,
+                        map: map
+                    });
+                }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1Ik-Idhdh4pqW_yC7XLAoevALh5FG52o&callback=initMap"
+                type="text/javascript"></script>
+        </div>
+    </div>
+
+</body>
+
+</html>

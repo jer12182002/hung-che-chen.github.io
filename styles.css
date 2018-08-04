@@ -1,0 +1,393 @@
+
+#load {
+    background-color:black;
+    height:800px;
+    width:auto;
+    margin:0 0 0 0 ;
+    padding:0 0 0 0;
+}
+#load #firstHalf{
+    position:absolute;
+    color:white;
+    font-size:4em;
+    left:5%;
+    top:10%;
+    animation: fadeIn 1.5s;
+}
+
+#load p{
+    opacity:0;
+}
+#load p{
+    position: absolute;
+    font-size:4em;
+    color:white;
+    border-top: 3px solid white;
+    top:60%;
+    left:60%;
+    animation-name: flipInX;
+    animation-duration: 1.5s;
+    animation-delay:.5s;
+    animation-fill-mode : forwards;
+}
+
+#load #arrow{
+    background: transparent url(./pictures/arrow-top.png) center center no-repeat;
+    background-size: 70px 37px !important;
+    border-radius: 30px;
+    width: 100px;
+    height: 37px;
+    position: fixed;
+    bottom: 55px;
+    z-index: 99;
+    text-indent: -9999 !important;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: left !important;
+    cursor: pointer;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    opacity: .7;
+}
+
+#load #top{
+    color:white;
+    text-align:center;
+    line-height: 1cm;
+}
+
+
+#load #rect_1{
+    width: 320px;
+    height:50px;
+    background-color:white;
+    position: absolute;
+    right:-8%;
+    top:5%;
+    transform: translate(0px, 0px) rotate(45deg) skew(0deg, 0deg) scale(1, 1); 
+}
+
+#load #rect_2{
+    width: 320px;
+    height:50px;
+    background-color:white;
+    position: absolute;
+    right:-4%;
+    top:10%;
+    transform: translate(0px, 0px) rotate(45deg) skew(0deg, 0deg) scale(1, 1); 
+}
+
+#load #rect_3{
+    width: 500px;
+    height:50px;
+    background-color:white;
+    position: absolute;
+    right:-6%;
+    top:15%;
+    transform: translate(0px, 0px) rotate(45deg) skew(0deg, 0deg) scale(1, 1); 
+}
+#intro{
+    height:800px;
+    width:auto;
+    text-align:center;
+    position: relative;
+}
+#intro h1{
+    font-size: 3em;
+    position: relative;
+    top:2%;
+    opacity:0;
+}
+#intro img{
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    position: absolute;
+    left:40%;
+    top:20%;
+    opacity:0;
+}
+#introDesc{
+    width:1200px;
+    height:300px;
+    text-align: center;
+    left:8%;
+}
+#introDesc p{
+    font-size: 1.6em;
+    position: absolute;
+    top:60%;
+    left:8%;
+    opacity: 0;
+}
+
+#exp{
+    background-color:black;
+    height:800px;
+    width:auto;
+    position: relative;
+    text-align: center;
+}
+#exp h1{
+    color:white;
+    font-size:3em;
+    position: relative;
+    top:5%;
+    opacity:0;
+}
+#exp p{
+    color:white;
+    opacity:0;
+}
+#exp #jobTitle{
+    font-size:2.3em;
+    position: relative;
+    top:20%;
+}
+#exp #jobInfo{
+    font-size:1.6em;
+    position: relative;
+    top:15%;
+}
+
+#exp #train{
+    width:370px;
+    height:110px;
+    position: absolute;
+    top:70%;
+    left:90%;
+    animation: trainRuns 15s infinite;
+    animation-timing-function: linear;
+}
+
+#exp #stop{
+    width:70px;
+    height:70px;
+    position: absolute;
+    top:73%;
+    left:20%;
+    opacity:0;
+}
+
+#skills{
+    height:800px;
+    width:auto;
+    position: relative;
+    text-align: center;
+}
+
+#skills h1{
+    font-size:3em;
+    position: relative;
+    top:5%;
+}
+#skills p{
+    width:200px;
+    font-size: 1.6em;
+}
+
+#skills #javaGroup{
+    text-align:center;
+    position: absolute;
+    left:20%;
+    top:15%;
+}
+
+#skills #andriodGroup{
+    text-align:center;
+    position: absolute;
+    left:43%;
+    top:15%;
+}
+
+#skills #cGroup{
+    text-align:center;
+    position: absolute;
+    left:65%;
+    top:15%;
+}
+
+#skills #webGroup{
+    text-align:center;
+    position: absolute;
+    left:32%;
+    top:55%;
+}
+
+#skills #sqlGroup{
+    text-align:center;
+    position: absolute;
+    left:57%;
+    top:55%;
+}
+#skills .circle_fadeIn{
+    opacity:0;
+}
+
+#contact{
+    background-color:black;
+    height:800px;
+    width:auto;
+    position: relative;
+    text-align: center;
+    color:white;
+}
+
+#contact h1{
+    font-size:3em;
+    position: relative;
+    top:5%;
+    opacity:0;
+}
+#contact #map{
+    position: absolute;
+    height:400px;
+    width:600px;
+    top:25%;
+    left:10%;
+    opacity:0;
+}
+#contact p{
+    position: relative;
+    top:15%;
+    left:60%;
+    text-align: left;
+    font-size:1.6em;
+    opacity:0;
+}
+#contact a{
+    color:white;
+    text-decoration: none;
+    opacity:0;
+    
+}
+
+#contact a:hover{
+    text-decoration:underline;
+}
+
+#contact #linkedIn{
+    width:60px;
+    height:60px;
+    position: absolute;
+    top:45%;
+    left:60%;
+    opacity:0;
+}
+
+#contact #github{
+    width:75px;
+    height:75px;
+    position: absolute;
+    top:44%;
+    left:68%;
+    opacity:0;
+
+}
+#contact #linkedIn:hover{
+    width:70px;
+    height:70px;
+}
+
+#contact #github:hover{
+    width:85px;
+    height:85px;
+}
+
+
+
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-20%, 0, 0);
+        transform: translate3d(-20%, 0, 0);
+      }
+    
+      to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+}
+
+@keyframes flipInX {
+    from {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+  
+    to {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+      opacity:1;
+    }
+  }
+  
+@keyframes trainRuns{
+    from{
+        left:100%;
+    }
+    to{
+        left:-27%;
+    }
+}
+
+@keyframes scrollInfadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes scrollInfadeInDownPic {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -50%, 0);
+      transform: translate3d(0, -50%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+
+
+
+  
